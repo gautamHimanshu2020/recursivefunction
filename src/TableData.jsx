@@ -24,9 +24,12 @@ export default function TableData() {
   }
 
   // Handle end change
-  function handleEndChange(e) {
+  // function handleEndChange(e) {
+  //   setEnd(e.target.value);
+  // }
+  const handleEndChange = (e) => {
     setEnd(e.target.value);
-  }
+  };
 
   // create table using recursive function
   function tableCreate(start, end, resultCallback) {
